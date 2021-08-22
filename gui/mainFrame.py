@@ -18,15 +18,17 @@ class Application(tk.Frame):
         tab_control = ttk.Notebook(master)
 
         # init onglet
-        createqrcode = ttk.Frame(tab_control)
         changeqRcode = ttk.Frame(tab_control)
+        createqrcode = ttk.Frame(tab_control)
+
 
         # Create onglet
-        tab_control.add(createqrcode, text='crée votre Qrcode')
         tab_control.add(changeqRcode, text='Changer votre Qrcode')
+        tab_control.add(createqrcode, text='crée votre Qrcode')
 
-        createQrcode(createqrcode)
         changeQr(changeqRcode)
+        createQrcode(createqrcode)
+
 
         tab_control.pack(expand=1, fill='both')
 

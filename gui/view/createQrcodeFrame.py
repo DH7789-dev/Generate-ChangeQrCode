@@ -10,7 +10,7 @@ def createQrcode(self):
     text_name = "1."
     tk.Label(self, text=text_name).place(x=40, y=75, width=20, height=20)
     name_qrcode = tk.StringVar()
-    name_qrcode.set("QrcodeDh")
+    name_qrcode.set("Nom du fichier")
     entree = tk.Entry(self, textvariable=name_qrcode, width=30)
     entree.place(x=80,y=70)
 
@@ -18,7 +18,7 @@ def createQrcode(self):
     text_data = "2."
     tk.Label(self, text=text_data).place(x=40, y=125, width=20, height=20)
     data = tk.StringVar()
-    data.set("https://www.youtube.com/watch?v=y9VXWsU3FSE&t=115s&ab_channel=Graven-D%C3%A9veloppement")
+    data.set("Mettez votre donnée")
     entree2 = tk.Entry(self, textvariable=data, width=30)
     entree2.place(x=80,y=120)
 

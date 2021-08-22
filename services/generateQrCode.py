@@ -13,6 +13,6 @@ def QrCode(name_qrcode,data, color_fill, color_back):
     qr.add_data(data)
     qr.make(fit=True)
     img = qr.make_image(fill_color=color_fill, back_color=color_back)
-    img.save(f'download/{name_qrcode}.png')
+    img.save(f'download/add/{name_qrcode}.png')
 
 
